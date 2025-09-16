@@ -13,21 +13,22 @@ function Login() {
 
   return (
     <>
-      <header>
-        <nav>
-          <ul>
+       <header>
+        <nav className="nav-container">
+          <ul className="nav-left">
             <li>Home</li>
             <li>Jobs</li>
             <li>Landing Page</li>
           </ul>
-          <ul>
+          <ul className="nav-right">
             <li><input type="text" placeholder="Search" /></li>
             <li>Get the app</li>
-            <li>Sign up</li>
+            <li><a href="#registration-form">Sign up</a></li>
             <li>Sign in</li>
           </ul>
         </nav>
       </header>
+
 
       <main>
         <div>
