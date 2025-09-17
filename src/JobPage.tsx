@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Styles.css'
 
 function JobPage() {
     const initialState = {
@@ -31,7 +32,8 @@ function JobPage() {
 
     return (
         <>
-            <h2>Job Information</h2>
+            <div className="card-container">
+                <h2>Job Information</h2>
 
             <form onSubmit={handleSubmit}>
                 <div>
@@ -41,6 +43,7 @@ function JobPage() {
                         name="jobTitle"
                         value={jobDetails.jobTitle}
                         onChange={handleChange}
+                        className='input-field'
                         required
                     />
                 </div>
@@ -52,6 +55,7 @@ function JobPage() {
                         name="companyName"
                         value={jobDetails.companyName}
                         onChange={handleChange}
+                        className='input-field'
                         required
                     />
                 </div>
@@ -62,7 +66,9 @@ function JobPage() {
                         type="text"
                         name="address"
                         value={jobDetails.address}
+                        className='input-field'
                         onChange={handleChange}
+                        
                         required
                     />
                 </div>
@@ -74,6 +80,7 @@ function JobPage() {
                         name="contactEmail"
                         value={jobDetails.contactEmail}
                         onChange={handleChange}
+                        className='input-field'
                         required
                     />
                 </div>
@@ -84,6 +91,7 @@ function JobPage() {
                         type="number"
                         name="contactPhone"
                         value={jobDetails.contactPhone}
+                        className='input-field'
                         onChange={handleChange}
                     />
                 </div>
@@ -94,6 +102,7 @@ function JobPage() {
                         name="jobDuties"
                         value={jobDetails.jobDuties}
                         onChange={handleChange}
+                     
                         required
                     ></textarea>
                 </div>
@@ -104,6 +113,7 @@ function JobPage() {
                         name="requirements"
                         value={jobDetails.requirements}
                         onChange={handleChange}
+                        
                         required
                     ></textarea>
                 </div>
@@ -114,11 +124,13 @@ function JobPage() {
                         name="companyInfo"
                         value={jobDetails.companyInfo}
                         onChange={handleChange}
+                      
                     ></textarea>
                 </div>
 
-                <button type="submit">Save Job Info</button>
+                <button type="submit" className='save-button'>Save Job Info</button>
             </form>
+            </div>
         </>
     );
 }
