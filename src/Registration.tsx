@@ -30,7 +30,8 @@ function Registration() {
 
   return (
     <>
-      <header>
+     <div className="card-container">
+         <header>
         <nav className="nav-container">
           <ul className="nav-left">
             <li>Home</li>
@@ -68,6 +69,7 @@ function Registration() {
               placeholder="At least 8 characters"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+            
               required
             />
           </div>
@@ -84,6 +86,7 @@ function Registration() {
           </button>
         </p>
       </main>
+     </div>
     </>
   );
 }
