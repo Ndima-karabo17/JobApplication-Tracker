@@ -13,6 +13,7 @@ function Login() {
 
   return (
     <>
+    <div className="card-container">
        <header>
         <nav className="nav-container">
           <ul className="nav-left">
@@ -64,7 +65,12 @@ function Login() {
             </button>
           </p>
         </div>
+
       </main>
+      <footer>
+       <div></div>
+      </footer>
+      </div>
     </>
   );
 }
