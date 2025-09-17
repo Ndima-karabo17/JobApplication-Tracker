@@ -20,7 +20,8 @@ function Home() {
   }, []);
 
   return (
-    <div>
+   <div className="card-container">
+     <div>
     
       <h3>Jobs You Applied For:</h3>
       {appliedJobs.length > 0 ? (
@@ -33,6 +34,7 @@ function Home() {
         <p>No jobs applied yet.</p>
       )}
     </div>
+   </div>
   );
 }
 
