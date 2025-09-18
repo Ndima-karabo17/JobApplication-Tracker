@@ -60,7 +60,7 @@ function JobPage() {
       setEditIndex(null);
       alert('Job updated successfully!');
     } else {
-      // Add new job
+    
       setJobs([...jobs, jobDetails]);
       alert('Job information saved!');
     }
@@ -77,7 +77,7 @@ function JobPage() {
     const updatedJobs = jobs.filter((_, i) => i !== index);
     setJobs(updatedJobs);
     alert('Job deleted!');
-    // Clear the form if you're editing the deleted job
+    
     if (editIndex === index) {
       setJobDetails(initialState);
       setEditIndex(null);
