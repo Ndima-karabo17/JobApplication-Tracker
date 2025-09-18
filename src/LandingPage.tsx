@@ -4,7 +4,7 @@ import SlackLogo from './assets/slack.png';
 import AmazonLogo from './assets/amazon.webp';
 import KelloggsLogo from './assets/kellogs.webp';
 import sidepic from './assets/sidepic.png';
-import Registration from './Registration';
+import { Link } from 'react-router-dom';
 
 
 function LandingPage() {
@@ -14,17 +14,17 @@ function LandingPage() {
         <header>
           <nav className="nav-container">
             <ul className="nav-left">
-              <li>Home</li>
-              <li>Jobs</li>
-              <li>Landing Page</li>
+              <li><Link to="/Home">Home</Link></li>
+              <li><Link to="/JobPage">Jobs</Link></li>
+              <li><Link to="/">Landing Page</Link></li>
              
             </ul>
             <ul className="nav-right">
               <li><input type="text" placeholder="Search" /></li>
               <li></li>
               <li> Get the app</li>
-              <li>Sign Up</li>
-              <li>Sign in</li>
+              <li><Link to="/Registration">Sign Up</Link></li>
+              <li><Link to="/Login">Sign in</Link></li>
             </ul>
           </nav>
         </header>
@@ -33,7 +33,7 @@ function LandingPage() {
             <div className="message">
               <h1>Find a Job With Your <br />Interests and Abilities</h1>
               <p>Find jobs that match your interests with us</p>
-              <button className='start-button' onClick={Registration}>Get Start</button>
+              <button className='start-button'><Link to="/Registration">Get Start</Link></button>
             </div>
             <div className='side-pic'>
               <img src={sidepic} alt="lady on a computer" className='sidepic' />
