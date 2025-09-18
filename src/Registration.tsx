@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Styles.css';
+import { Link } from 'react-router-dom';
 
 function Registration() {
   const [username, setUsername] = useState('');
@@ -31,22 +32,24 @@ function Registration() {
   return (
     <>
      <div className="card-container">
-         <header>
-        <nav className="nav-container">
-          <ul className="nav-left">
-            <li>Home</li>
-            <li>Jobs</li>
-            <li>Landing Page</li>
-          </ul>
-          <ul className="nav-right">
-            <li><input type="text" placeholder="Search" /></li>
-            <li>Get the app</li>
-            <li><a href="#registration-form">Sign up</a></li>
-            <li>Sign in</li>
-          </ul>
-        </nav>
-      </header>
-
+         
+                <header>
+                  <nav className="nav-container">
+                    <ul className="nav-left">
+                      <li><Link to="/Home">Home</Link></li>
+                      <li><Link to="/JobPage">Jobs</Link></li>
+                      <li><Link to="/">Landing Page</Link></li>
+                     
+                    </ul>
+                    <ul className="nav-right">
+                      <li><input type="text" placeholder="Search" /></li>
+                      <li></li>
+                      <li> Get the app</li>
+                      <li><Link to="/Registration">Sign Up</Link></li>
+                      <li><Link to="/Login">Sign in</Link></li>
+                    </ul>
+                  </nav>
+                </header>
       <main>
         <h2>Welcome!</h2>
 
