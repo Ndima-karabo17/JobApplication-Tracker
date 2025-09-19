@@ -1,4 +1,3 @@
-// src/pages/404.tsx or src/404.tsx
 import { Link } from 'react-router-dom';
 
 function NotFound() {
@@ -37,3 +36,4 @@ const styles = {
 };
 
 export default NotFound;
+
