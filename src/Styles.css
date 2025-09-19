@@ -74,9 +74,8 @@ form div {
   margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="password"] {
-  width: 60%;
+.user-name{
+  width: 70%;
   padding: 8px;
   margin-left: 100px;
    padding: 10px;
@@ -200,36 +199,60 @@ button:hover {
   width: 100px;
   cursor: pointer;
 }
-
-/*Job page*/
-form div {
-  margin-bottom: 20px;
+/*Job Page style*/
+.card-infor{
+    background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 900px;
+  margin-left: 400px;
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
+.job-label{
+ margin-left: 53px;
 }
-
-.input-field,
-textarea {
-  width: 100%;
-  padding: 10px 12px;
+.input-field{
+   width: 80%;
+  padding: 8px;
+  margin-left: 50px;
+   padding: 10px;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
-  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+ 
+}
+.information{
+     width: 80%;
+  height: 10vh;
+  margin-left: 50px;
+   padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
-textarea {
-  min-height: 100px;
-  resize: vertical;
+.form-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+.card-infor > h2{
+  text-align: center;
+  font-size: 40px;
 }
 /*Pages that have links style*/
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 16px;
 }
 
 a:hover { 
@@ -238,9 +261,4 @@ a:hover {
 }
 
 
-
-
-
-
-
-
+/*Home Page style */
