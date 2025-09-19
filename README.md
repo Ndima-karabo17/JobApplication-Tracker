@@ -26,11 +26,7 @@ Technologies Used
 
 
  Screenshots
-<img width="1909" height="937" alt="Screenshot 2025-09-19 142201" src="https://github.com/user-attachments/assets/c8d99025-edf2-430c-a7a1-1ca361ce628a" />
+<img width="1000" height="900" alt="Screenshot 2025-09-19 142201" src="https://github.com/user-attachments/assets/c8d99025-edf2-430c-a7a1-1ca361ce628a" />
 
-
-
-
-
-
+<img width="1000" height="900" alt="Screenshot 2025-09-19 142834" src="https://github.com/user-attachments/assets/3ade69c2-1922-4b88-abb6-66b83833fc96" />
 
