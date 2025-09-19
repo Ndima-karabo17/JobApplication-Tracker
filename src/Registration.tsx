@@ -51,7 +51,8 @@ function Registration() {
                   </nav>
                 </header>
       <main>
-        <h2>Welcome!</h2>
+       <div className="form-container">
+         <h2>Welcome!</h2>
 
         <form id="registration-form" onSubmit={handleSubmit}>
           <div>
@@ -83,11 +84,11 @@ function Registration() {
         </form>
 
         <p>
-          Already have an account?{' '}
-          <button type="button" onClick={() => alert('Navigate to login page')}>
-            Log in
-          </button>
+          Already have an account?<Link to="/Login">  Log in</Link>
+          
+         
         </p>
+       </div>
       </main>
      </div>
     </>
