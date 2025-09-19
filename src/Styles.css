@@ -262,3 +262,40 @@ a:hover {
 
 
 /*Home Page style */
+.card-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.job-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-info {
+  font-size: 1rem;
+}
+
+.job-actions button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
