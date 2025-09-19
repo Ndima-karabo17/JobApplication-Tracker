@@ -24,8 +24,7 @@ function Login() {
 
             </ul>
             <ul className="nav-right">
-              <li><input type="text" placeholder="Search" /></li>
-              <li></li>
+           
               <li> Get the app</li>
               <li><Link to="/Registration">Sign Up</Link></li>
               <li><Link to="/Login">Sign in</Link></li>
@@ -38,13 +37,13 @@ function Login() {
             <h2>Welcome!</h2>
             <form onSubmit={handleSubmit}>
               <div>
-                <label>Username:</label>
+                <label >Username:</label>
                 <input
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder="username"
-                  required />
+                  required className='user-name'/>
               </div>
 
               <div>
@@ -54,7 +53,7 @@ function Login() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="password"
-                  required />
+                  required  className='user-name'/>
               </div>
 
               <button type="submit">Log in</button>
