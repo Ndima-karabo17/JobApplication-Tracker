@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Styles.css';
+import { Link } from 'react-router-dom';
 
 interface Job {
   jobTitle: string;
@@ -7,6 +8,7 @@ interface Job {
   address: string;
   contactEmail: string;
   contactPhone: string;
+  dateApplied: string;
   jobDuties: string;
   requirements: string;
   companyInfo: string;
@@ -19,6 +21,7 @@ function JobPage() {
     address: '',
     contactEmail: '',
     contactPhone: '',
+    dateApplied: '',
     jobDuties: '',
     requirements: '',
     companyInfo: '',
@@ -28,7 +31,7 @@ function JobPage() {
   const [jobs, setJobs] = useState<Job[]>([]);
   const [editIndex, setEditIndex] = useState<number | null>(null);
 
-  // Load jobs from localStorage
+
   useEffect(() => {
     const storedJobs = localStorage.getItem('jobs');
     if (storedJobs) {
@@ -53,152 +56,170 @@ function JobPage() {
     e.preventDefault();
 
     if (editIndex !== null) {
-  
+
       const updatedJobs = [...jobs];
       updatedJobs[editIndex] = jobDetails;
       setJobs(updatedJobs);
       setEditIndex(null);
-      alert('Job updated successfully!');
+
     } else {
-    
+
       setJobs([...jobs, jobDetails]);
-      alert('Job information saved!');
+
     }
 
     setJobDetails(initialState);
   };
 
-  const handleEdit = (index: number) => {
-    setJobDetails(jobs[index]);
-    setEditIndex(index);
-  };
+  function handleSave() {
 
-  const handleDelete = (index: number) => {
-    const updatedJobs = jobs.filter((_, i) => i !== index);
-    setJobs(updatedJobs);
-    alert('Job deleted!');
-    
-    if (editIndex === index) {
-      setJobDetails(initialState);
-      setEditIndex(null);
-    }
-  };
+
+  }
 
   return (
-    <div className="card-container">
-      <h2>Job Information</h2>
+    <>
+      <header>
+        <nav className="nav-container">
+          <ul className="nav-left">
+            <li><Link to="/Home">Home</Link></li>
+            <li><Link to="/JobPage">Jobs</Link></li>
+            <li><Link to="/">Landing Page</Link></li>
 
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Job Title:</label>
-          <input
-            type="text"
-            name="jobTitle"
-            value={jobDetails.jobTitle}
-            onChange={handleChange}
-            required
-            className="input-field"
-          />
-        </div>
+          </ul>
+          <ul className="nav-right">
+          
+            <li> Get the app</li>
+            <li><Link to="/Registration">Sign Up</Link></li>
+            <li><Link to="/Login">Sign in</Link></li>
+          </ul>
+        </nav>
+      </header>
+<div className="card-infor">
+  <h2>Job Information</h2>
 
-        <div>
-          <label>Company Name:</label>
-          <input
-            type="text"
-            name="companyName"
-            value={jobDetails.companyName}
-            onChange={handleChange}
-            required
-            className="input-field"
-          />
-        </div>
+  <form onSubmit={handleSubmit}>
+    <div className="form-grid">
+      <div>
+        <label className='job-label'>Job Title:</label>
+        <input
+          type="text"
+          name="jobTitle"
+          value={jobDetails.jobTitle}
+          onChange={handleChange}
+          required
+          className="input-field"
+        />
+      </div>
 
-        <div>
-          <label>Address:</label>
-          <input
-            type="text"
-            name="address"
-            value={jobDetails.address}
-            onChange={handleChange}
-            required
-            className="input-field"
-          />
-        </div>
+      <div>
+        <label className='job-label'>Company Name:</label>
+        <input
+          type="text"
+          name="companyName"
+          value={jobDetails.companyName}
+          onChange={handleChange}
+          required
+          className="input-field"
+        />
+      </div>
 
-        <div>
-          <label>Email Address:</label>
-          <input
-            type="email"
-            name="contactEmail"
-            value={jobDetails.contactEmail}
-            onChange={handleChange}
-            required
-            className="input-field"
-          />
-        </div>
+      <div>
+        <label className='job-label'>Address:</label>
+        <input
+          type="text"
+          name="address"
+          value={jobDetails.address}
+          onChange={handleChange}
+          required
+          className="input-field"
+        />
+      </div>
 
-        <div>
-          <label>Contact Phone:</label>
-          <input
-            type="tel"
-            name="contactPhone"
-            value={jobDetails.contactPhone}
-            onChange={handleChange}
-            className="input-field"
-          />
-        </div>
+      <div>
+        <label className='job-label'>Email Address:</label>
+        <input
+          type="email"
+          name="contactEmail"
+          value={jobDetails.contactEmail}
+          onChange={handleChange}
+          required
+          className="input-field"
+        />
+      </div>
 
-        <div>
-          <label>Job Duties:</label>
-          <textarea
-            name="jobDuties"
-            value={jobDetails.jobDuties}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </div>
+      <div>
+        <label className='job-label'>Contact Phone:</label>
+        <input
+          type="tel"
+          name="contactPhone"
+          value={jobDetails.contactPhone}
+          onChange={handleChange}
+          className="input-field"
+          required />
+      </div>
 
-        <div>
-          <label>Requirements:</label>
-          <textarea
-            name="requirements"
-            value={jobDetails.requirements}
-            onChange={handleChange}
-            required
-          ></textarea>
-        </div>
+      <div>
+        <label className='job-label'>Job Duties:</label>
+        <textarea
+          name="jobDuties"
+          value={jobDetails.jobDuties}
+          onChange={handleChange}
+          className='information'
+          required
+        ></textarea>
+      </div>
 
-        <div>
-          <label>Company Information:</label>
-          <textarea
-            name="companyInfo"
-            value={jobDetails.companyInfo}
-            onChange={handleChange}
-          ></textarea>
-        </div>
+      <div>
+        <label className='job-label'>Requirements:</label>
+        <textarea
+          name="requirements"
+          value={jobDetails.requirements}
+          onChange={handleChange}
+          className='information'
+          required
+        ></textarea>
+      </div>
 
-        <button type="submit" className="save-button">
-          {editIndex !== null ? 'Update Job Info' : 'Save Job Info'}
-        </button>
-      </form>
+      <div>
+        <label className='job-label'>Company Information:</label>
+        <textarea
+          name="companyInfo"
+          value={jobDetails.companyInfo}
+          className='information'
+          onChange={handleChange}
+        ></textarea>
+      </div>
 
-      <hr />
+      <div>
+        <label className='job-label'>Date Applied:</label>
+        <input
+          type="date"
+          name="dateApplied"
+          value={jobDetails.dateApplied}
+          onChange={handleChange}
+          required
+          className="input-field"
+        />
+      </div>
 
-      <h3>Saved Jobs</h3>
-      {jobs.length === 0 && <p>No job entries yet.</p>}
-
-      <ul>
-        {jobs.map((job, index) => (
-          <li key={index}>
-            <strong>{job.jobTitle}</strong> at <em>{job.companyName}</em> <br />
-            <button onClick={() => handleEdit(index)}>Edit</button>
-            <button onClick={() => handleDelete(index)} style={{ marginLeft: '10px' }}>
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
+      <div>
+        <label className='job-label'>Status:</label>
+        <select name="status" id="status" className="input-field">
+          
+          <option value="Applied">Applied</option>
+          <option value="Interviewed">Interviewed</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+      </div>
     </div>
+
+    <button type="submit" className="save-button" onClick={handleSave}>
+      Save Job Info
+    </button>
+  </form>
+</div>
+
+    </>
   );
 }
 
