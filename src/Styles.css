@@ -93,7 +93,7 @@ button:hover {
   margin-top: 10px;
 }
 
-/*landing page style*/
+/*Landing page style*/
 
 .start-button {
   background-color: #4f80c6;
@@ -171,14 +171,17 @@ button:hover {
 
 .slacklogo {
   width: 90px;
+  cursor: pointer;
 }
 
 .amazonlogo {
   width: 100px;
+  cursor: pointer;
 }
 
 .kelloglogo {
   width: 100px;
+  cursor: pointer;
 }
 
 /*Job page*/
@@ -205,4 +208,14 @@ textarea {
 textarea {
   min-height: 100px;
   resize: vertical;
+}
+/*Pages that have links style*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover { 
+  background-color: #5c97eb;
+  color: white;
 }
