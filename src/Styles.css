@@ -299,3 +299,158 @@ a:hover {
   cursor: pointer;
 }
 
+
+
+
+
+
+/* Media Queries */
+
+/* 320px*/
+@media screen and (max-width: 320px) {
+  .user-name,
+  label,
+  button,
+  .input-field,
+  .information {
+    margin-left: 10px !important;
+    width: 90% !important;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .card-infor {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .save-button {
+    margin-left: 20px;
+  }
+
+  .message {
+    margin-left: 0;
+  }
+}
+
+/* 480px */
+@media screen and (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .user-name,
+  .input-field,
+  .information {
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  .save-button {
+    margin-left: 20px;
+  }
+
+  .card-infor {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .message {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sidepic {
+    display: none;
+  }
+}
+
+/* 768px*/
+@media screen and (max-width: 768px) {
+  .body-div {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .message {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidepic {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .card-infor {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .save-button {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .footer-div {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* 1024px */
+@media screen and (max-width: 1024px) {
+  .card-infor {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .save-button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* 1200px*/
+@media screen and (max-width: 1200px) {
+  .card-infor {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
