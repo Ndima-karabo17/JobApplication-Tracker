@@ -52,8 +52,8 @@ function Home() {
             <li><Link to="/JobPage">Jobs</Link></li>
           </ul>
           <ul className="nav-right">
-            <li><Link to="/Registration">Sign Up</Link></li>
-            <li><Link to="/Login">Sign in</Link></li>
+            
+            <li><Link to="/">Logout</Link></li>
           </ul>
         </nav>
       </header>
