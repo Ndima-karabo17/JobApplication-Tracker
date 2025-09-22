@@ -5,12 +5,12 @@ function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false); 
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Get user from localStorage
     const storedUser = localStorage.getItem('user');
 
     if (!storedUser) {
@@ -25,9 +25,14 @@ function Login() {
       password === parsedUser.password
     ) {
       setError('');
-      alert('Logged in successfully!');
-      // Optionally navigate to a dashboard or homepage
-      navigate('/Home');
+      setLoading(true); 
+
+      alert('Sign in successfully!Redirecting in 3 seconds');
+
+      
+      setTimeout(() => {
+        navigate('/JobPage');
+      }, 3000);
     } else {
       setError('Invalid username or password.');
     }
@@ -42,7 +47,6 @@ function Login() {
             <li><Link to="/JobPage">Jobs</Link></li>
           </ul>
           <ul className="nav-right">
-            
             <li><Link to="/Registration">Sign Up</Link></li>
             <li><Link to="/Login">Sign in</Link></li>
           </ul>
@@ -51,40 +55,50 @@ function Login() {
 
       <main>
         <div className="form-container">
-          <h2>Welcome!</h2>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label>Username:</label>
-              <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="username"
-                required
-                className="user-name"
-              />
+          {loading ? (
+            <div className="loading-message">
+              <h2>Logging in...</h2>
+              <p className='redirect'>You will be redirected in 3 seconds to add a job information.</p>
+        
             </div>
+          ) : (
+            <>
+              <h2>Welcome!</h2>
+              <form onSubmit={handleSubmit}>
+                <div>
+                  <label>Username:</label>
+                  <input
+                    type="text"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    placeholder="username"
+                    required
+                    className="user-name"
+                  />
+                </div>
 
-            <div>
-              <label>Password:</label>
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="password"
-                required
-                className="user-name"
-              />
-            </div>
+                <div>
+                  <label>Password:</label>
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="password"
+                    required
+                    className="user-name"
+                  />
+                </div>
 
-            {error && <p className="error-message">{error}</p>}
+                {error && <p className="error-message">{error}</p>}
 
-            <button type="submit">Log in</button>
-          </form>
+                <button type="submit">Log in</button>
+              </form>
 
-          <p>
-            Don't have an account? <Link to="/Registration">Sign Up</Link>
-          </p>
+              <p>
+                Don't have an account? <Link to="/Registration">Sign Up</Link>
+              </p>
+            </>
+          )}
         </div>
       </main>
     </>
