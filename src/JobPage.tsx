@@ -83,12 +83,11 @@ function JobPage() {
           <ul className="nav-left">
             <li><Link to="/Home">Home</Link></li>
             <li><Link to="/JobPage">Jobs</Link></li>
-            <li><Link to="/">Landing Page</Link></li>
 
           </ul>
           <ul className="nav-right">
           
-            <li> Get the app</li>
+          
             <li><Link to="/Registration">Sign Up</Link></li>
             <li><Link to="/Login">Sign in</Link></li>
           </ul>
@@ -206,7 +205,7 @@ function JobPage() {
         <label className='job-label'>Status:</label>
         <select name="status" id="status" className="input-field">
           
-          <option value="Applied">Applied</option>
+          <option value="Applied" className='applied'>Applied</option>
           <option value="Interviewed">Interviewed</option>
           <option value="Rejected">Rejected</option>
         </select>
