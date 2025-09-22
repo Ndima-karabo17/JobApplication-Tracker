@@ -39,16 +39,16 @@ function Registration() {
 
   return (
     <>
-      <div className="card-container">
+   
         <header>
           <nav className="nav-container">
             <ul className="nav-left">
               <li><Link to="/Home">Home</Link></li>
               <li><Link to="/JobPage">Jobs</Link></li>
-              <li><Link to="/">Landing Page</Link></li>
+           
             </ul>
             <ul className="nav-right">
-              <li>Get the app</li>
+             
               <li><Link to="/Registration">Sign Up</Link></li>
               <li><Link to="/Login">Sign in</Link></li>
             </ul>
@@ -95,7 +95,7 @@ function Registration() {
             </p>
           </div>
         </main>
-      </div>
+   
     </>
   );
 }
