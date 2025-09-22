@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 40px 0;
   background-color: #ffffff;
+  color: #000000;
 }
 
-
-/*Registration and login style */
+/* Registration and login style */
 header {
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   padding: 10px 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #000000;
   margin-top: -40px;
 }
 
@@ -21,26 +21,22 @@ header {
   align-items: center;
 }
 
-.nav-container{
-   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-.form-container{
-   background-color: white;
+.form-container {
+  background-color: white;
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
 }
+
 .form-container h2 {
   text-align: center;
   margin-bottom: 25px;
-  color: #333;
+  color: #000000;
 }
-.form-container p{
+
+.form-container p {
   margin-top: 30px;
   margin-left: 100px;
 }
@@ -53,8 +49,7 @@ header {
   margin: 0;
 }
 
-
-.nav-right>li>input {
+.nav-right > li > input {
   margin-right: 10px;
 }
 
@@ -62,42 +57,43 @@ nav ul li {
   cursor: pointer;
 }
 
-
 main {
   padding: 40px;
   max-width: 400px;
   margin: 0 auto;
 }
 
-
 form div {
   margin-bottom: 15px;
 }
 
-.user-name{
+.user-name {
   width: 70%;
-  padding: 8px;
+  padding: 10px;
   margin-left: 100px;
-   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 6px;
   transition: border-color 0.3s ease;
+  background-color: #ffffff;
+  color: #000000;
 }
-label{
-  margin-left:100px ;
+
+label {
+  margin-left: 100px;
 }
+
 button {
   padding: 10px 50px;
-margin-left: 100px;
-  background-color: #00A693;
+  margin-left: 100px;
+  background-color: #000000;
   border: none;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #06bca7;
+  background-color: #333333;
 }
 
 .save-button {
@@ -109,16 +105,16 @@ button:hover {
   margin-top: 10px;
 }
 
-/*Landing page style*/
-
+/* Landing page style */
 .start-button {
-  background-color: #4f80c6;
+  background-color: #000000;
   padding: 15px 30px;
   border-radius: 10px;
+  color: white;
 }
 
 .start-button:hover {
-  background-color: #5c97eb;
+  background-color: #333333;
 }
 
 .message {
@@ -131,7 +127,6 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   padding: 60px 100px;
-
 }
 
 .message {
@@ -160,7 +155,6 @@ button:hover {
   width: 40vw;
   height: 70vh;
   object-fit: cover;
-
 }
 
 .footer-div {
@@ -169,7 +163,6 @@ button:hover {
   justify-content: space-between;
   padding: 30px 20px;
   flex-wrap: wrap;
-
 }
 
 .footer-div h2 {
@@ -185,23 +178,16 @@ button:hover {
   margin-top: 140px;
 }
 
-.slacklogo {
+.slacklogo,
+.amazonlogo,
+.kelloglogo {
   width: 90px;
   cursor: pointer;
 }
 
-.amazonlogo {
-  width: 100px;
-  cursor: pointer;
-}
-
-.kelloglogo {
-  width: 100px;
-  cursor: pointer;
-}
-/*Job Page style*/
-.card-infor{
-    background-color: white;
+/* Job Page style */
+.card-infor {
+  background-color: white;
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -209,30 +195,27 @@ button:hover {
   margin-left: 400px;
 }
 
-.job-label{
- margin-left: 53px;
+.job-label {
+  margin-left: 53px;
 }
-.input-field{
-   width: 80%;
-  padding: 8px;
+
+.input-field,
+.information {
+  width: 80%;
+  padding: 10px;
   margin-left: 50px;
-   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 6px;
+  background-color: #ffffff;
+  color: #000000;
   transition: border-color 0.3s ease;
- 
 }
-.information{
-     width: 80%;
+
+.information {
   height: 10vh;
-  margin-left: 50px;
-   padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  transition: border-color 0.3s ease;
 }
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -244,24 +227,25 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-.card-infor > h2{
+
+.card-infor > h2 {
   text-align: center;
   font-size: 40px;
 }
-/*Pages that have links style*/
+
+/* Pages that have links style */
 a {
   text-decoration: none;
   color: inherit;
   font-size: 16px;
 }
 
-a:hover { 
-  color: #1363d2;
-  text-decoration:underline;
+a:hover {
+  color: #666666;
+  text-decoration: underline;
 }
 
-
-/*Home Page style */
+/* Home Page style */
 .card-container {
   max-width: 600px;
   margin: 0 auto;
@@ -275,11 +259,12 @@ a:hover {
 }
 
 .job-card {
-  background: #f9f9f9;
+  background: #ffffff;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border: 1px solid #000000;
 }
 
 .job-content {
@@ -298,26 +283,49 @@ a:hover {
   font-size: 0.9rem;
   cursor: pointer;
 }
+
 .delete-btn{
-  background-color: red;
-  color: white;
-}
-.delete-btn:hover{
-    background-color: red;
-  color: white;
+ background-color: red;
+  color: #ffffff;
 }
 .edit-btn{
-  background-color:rgb(60, 60, 235);
-  color: white;
+   background-color: rgb(75, 75, 239);
+  color: #ffffff;
+}
+.add-btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.delete-btn:hover{
+ background-color: red;
+  color: #ffffff;
 }
 .edit-btn:hover{
-   background-color:rgb(60, 60, 235);
-  color: white;
+   background-color: rgb(75, 75, 239);
+  color: #ffffff;
+}
+.add-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.status {
+  font-weight: bold;
+}
+
+.status.rejected {
+  color: red;
+}
+
+.status.applied {
+  color: rgb(205, 205, 82);
+}
+
+.status.interviewed {
+  color: green;
 }
 
 /* Media Queries */
-
-/* 320px*/
 @media screen and (max-width: 320px) {
   .user-name,
   label,
@@ -351,7 +359,6 @@ a:hover {
   }
 }
 
-/* 480px */
 @media screen and (max-width: 480px) {
   .nav-container {
     flex-direction: column;
@@ -395,7 +402,6 @@ a:hover {
   }
 }
 
-/* 768px*/
 @media screen and (max-width: 768px) {
   .body-div {
     flex-direction: column;
@@ -443,7 +449,6 @@ a:hover {
   }
 }
 
-/* 1024px */
 @media screen and (max-width: 1024px) {
   .card-infor {
     margin-left: auto;
@@ -457,7 +462,6 @@ a:hover {
   }
 }
 
-/* 1200px*/
 @media screen and (max-width: 1200px) {
   .card-infor {
     width: 80%;
