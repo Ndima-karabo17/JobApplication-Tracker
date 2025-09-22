@@ -20,7 +20,6 @@ function LandingPage() {
              
             </ul>
             <ul className="nav-right">
-              <li> Get the app</li>
               <li><Link to="/Registration">Sign Up</Link></li>
               <li><Link to="/Login">Sign in</Link></li>
             </ul>
