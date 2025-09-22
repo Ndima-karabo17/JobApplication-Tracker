@@ -16,7 +16,7 @@ function LandingPage() {
             <ul className="nav-left">
               <li><Link to="/Home">Home</Link></li>
               <li><Link to="/JobPage">Jobs</Link></li>
-              <li><Link to="/">Landing Page</Link></li>
+         
              
             </ul>
             <ul className="nav-right">
