@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 interface Job {
-  id?: string;
+
   jobTitle: string;
   companyName: string;
   address: string;
