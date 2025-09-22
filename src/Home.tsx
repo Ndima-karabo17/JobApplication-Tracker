@@ -52,7 +52,6 @@ function Home() {
             <li><Link to="/JobPage">Jobs</Link></li>
           </ul>
           <ul className="nav-right">
-            <li>Get the app</li>
             <li><Link to="/Registration">Sign Up</Link></li>
             <li><Link to="/Login">Sign in</Link></li>
           </ul>
@@ -62,9 +61,11 @@ function Home() {
       <main>
         <div className="card-container">
           <h2>Jobs You Applied For:</h2>
+         
 
           {jobs.length === 0 ? (
-            <p>You haven't applied for any job</p>
+            <p>You haven't applied for any job. <Link to="/JobPage"><button className='add-btn'>ADD</button></Link></p>
+             
           ) : (
             <div className="job-grid">
               {jobs.map((job, index) => (
