@@ -298,11 +298,22 @@ a:hover {
   font-size: 0.9rem;
   cursor: pointer;
 }
-
-
-
-
-
+.delete-btn{
+  background-color: red;
+  color: white;
+}
+.delete-btn:hover{
+    background-color: red;
+  color: white;
+}
+.edit-btn{
+  background-color:rgb(60, 60, 235);
+  color: white;
+}
+.edit-btn:hover{
+   background-color:rgb(60, 60, 235);
+  color: white;
+}
 
 /* Media Queries */
 
