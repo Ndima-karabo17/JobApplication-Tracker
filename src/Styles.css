@@ -198,7 +198,9 @@ button:hover {
 .job-label {
   margin-left: 53px;
 }
-
+.redirect{
+  color: rgb(101, 95, 95);
+}
 .input-field,
 .information {
   width: 80%;
