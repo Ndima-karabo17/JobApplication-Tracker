@@ -26,13 +26,13 @@ Technologies Used
 
 ## Dependencies to install and how to run the project
 
--Make sure you have Nodejs installed or install it(https://nodejs.org/)
--Clone my project repo(https://github.com/Ndima-karabo17/JobApplication-Tracker.git) in Visual Studio Code
--Open terminal and verify if you are inside JobApplication-Tracker if not navigate to it
--Run npm install in terminal inside Links-Vault
--npm install react-router-dom
--followed by npm run dev
--Follow the link that will show to see the project
+-  sure you have Nodejs installed or install it(https://nodejs.org/)
+- Clone my project repo(https://github.com/Ndima-karabo17/JobApplication-Tracker.git) in Visual Studio Code
+- Open terminal and verify if you are inside JobApplication-Tracker if not navigate to it
+- Run npm install in terminal inside Links-Vault
+- npm install react-router-dom
+- followed by npm run dev
+- Follow the link that will show to see the project
 
 
  Flow of web pages using ScreenShorts
