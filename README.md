@@ -35,8 +35,8 @@ Technologies Used
 - Follow the link that will show to see the project
 
 
- Flow of web pages using ScreenShorts
-
+ Flow of web pages using Screenshots
+-
  
 <img width="800" height="900" alt="Screenshot 2025-09-19 142834" src="https://github.com/user-attachments/assets/3ade69c2-1922-4b88-abb6-66b83833fc96" />
 <img width="800" height="900" alt="Screenshot 2025-09-19 143458" src="https://github.com/user-attachments/assets/c4ba54d6-a05b-45d0-9127-35d7336e9abb" />
