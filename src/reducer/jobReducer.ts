@@ -78,4 +78,5 @@ export function useJobManager() {
   };
 
   return { jobDetails, editIndex, handleChange, handleSubmit };
+
 }
